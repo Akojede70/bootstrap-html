@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femi Page</title>
+    <style>
+        h1{color:blue; font-size: 2rem;}
+        h2{color:purple; font-size:1rem;}
+
+.outer { 
+  width: 400px;
+  height: 200px;
+  background: blue
+}
+.inner{
+  width: 100%;
+   height: 50%;
+  background: red;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  .banner {
+    width: 50vw;
+    height: 50vh;
+    background: orange;
+  } 
+  .header { 
+    width: 100vw; /*view width, and view height*/
+    height: 100vh;
+    background: brown;}
+
+    .navbar {
+      background: pink;
+      height: 100px;
+      color: brown;
+      font-size: 3rem;
+    }
+.tim { background: red;
+ min-height: calc(100vh - 10 0px); 
+}
+
+/* using Div and span */
+div { color:red ; background: white; font-family: monospace; border:3px solid black;}
+span {text-transform: uppercase; line-height: 1.5em;}
+
+/* Inheritance */
+/* Last rule apply and univeral "selector as the least amount of specifity" */
+
+/* RGB Red, Green, Blue 0-255 */
+#first {color: rgb(255, 0, 0); background: rgb(0, 0, 0); }
+#second {color: rgba(0, 255, 0, 0.55); background: rgb(255,255,255); }
+
+/* class selectors use .*/
+.green {color: brown; background: orange;}
+.red{color: blue; background: pink;}
+/* we can also change the color of the whole body and use body as selector */
+/* grouping selector h1,h2,h3 */
+
+/* using i.d and class selector together */
+#title {font-size: 40px; } /* we can use px for font-seize,width, amd height. it deals with expansion*/
+/* pixel are absolute value they go with the background color */
+.lowercase {text-transform: lowercase;}
+
+/* i.d selectors use #*/
+  #heading {color:aqua; background: goldenrod}
+
+/* id must be unique ensure you are not using them in other place else  */
+
+h6 {font-family: "Yesteryear", cursive;}
+h3 {color: crimson;}
+h4 {color: cadetblue;}
+p{color: indigo; padding: top 30px;
+padding-bottom: 20px; padding-left: 12; padding-right: 25px;}
+.inline{background: yellowgreen; color:brown}
+.block{background: yellowgreen; color:brown}
+
+    </style>
+
+    <link rel="stylesheet" href="style.css"/> <!--relative part-->
+</head>
+<body>
+    <a href="peter.html">peter page</a>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h3>hello world</h3>
+    <h4>hello People</h4>
+    <h4>hello People</h4>
+    <h4>hello People</h4>
+    <h1 id="heading">Title heading</h1>
+
+    <p> Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Debitis quasi, repudiandae 
+        reiciendis aspernatur blanditiis nisi quis autem quidem nulla, 
+        earum ducimus numquam, ex assumenda mollitia repellendus officiis. 
+        Unde mollitia ab ipsam et quos asperiores similique soluta necessitatibus 
+        placeat quo labore dolorem nobis est corporis, dolor atque ea dolores 
+        saepe blanditiis.
+    </p>
+<h1>footer Heading</h1>
+<br>
+<h5 id="title" class="green lowercase">I am green</h5>
+<h3 class="green">I am green</h3>
+<h3 class="red">I am red</h3>
+<h3 class="green">I am green</h3>
+<h3 class="red">I am red</h3>
+<h3 class="green">I am green</h3>
+<h3 class="red">I am red</h3>
+<br>
+<div class="block"> she is beautiful</div>
+<br>
+<span class="inline"> black is gold</span>
+<br>
+<div>
+    <h3>heading number one</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa 
+     debitis ducimus reiciendis corrupti voluptatem totam maiores voluptate 
+     iure ratione voluptatum nisi quidem, omnis itaque deserunt cupiditate 
+     fugiat cum sit molestias. Labore, nostrum, qui eius autem fugiat impedit 
+     facilis debitis quo velit aliquam consequuntur vitae, commodi ab 
+     deleniti! Deleniti, quo iusto.
+    </p>
+</div>
+    <h3>heading number 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque explicabo sit quis ab quibusdam optio magni, 
+        <span>I'AM UPPERCASE</span> impedit provident 
+        magnam, sunt assumenda laborum! Quaerat, laudantium neque?</p>
+
+        <h2 id="first"> building a project</h2>
+        <h2 id="second"> building a project using html and css</h2>
+     <div class="outer">
+    <div class="inner"></div>  
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="banner"></div>
+    <div class="header"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="navbar">this is navbar</div>
+    <div class="tim">this is navbar</div>
+    </body>
+</html>

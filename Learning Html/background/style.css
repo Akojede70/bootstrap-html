@@ -1,0 +1,57 @@
+
+/* padding: 50px everything will align both right,left,and,right */
+/* padding: 30px:(up and Bottom) 60px(left and right) */
+/* padding 20px(T) 40px(R) 60px(D) 10px(L)*/
+/* same content with margin and padding, padding deals with word, marging deals with container. */
+/* margin auto will fix at the center */
+/* border-style: solid;
+   border-width: 10px; 
+   border-color: green
+   display: block(padding and margin respect block, inline : to make it spread out
+   display: inline-block to make a little portion like not to spread out
+   list-style-type: none, upper-roman;.
+   opacity(transpanacy) and RGB(A) are the same and they move with in the range of 0-1 e.g opacity: 0-1;
+   visibility: hidden;  
+   */
+
+   /* browser respect top, bottom mergin for block element and does not respect it for inline element. */
+   /* we can also have
+   border-bottom-style: dashed;
+   border-bottom-width: 5px;
+   border-bottom-color: #222; 
+   border-radius: 50%; 50px*/
+
+   /* outline is used to move border has the same write up with border */
+
+   /* we can also have
+   border: 13px(width) solid(style) yellow(color) */
+
+/* font-style: italic;normal.
+   font-weight: bold; lighter;e.t.c
+   text-align: center; left; Right:
+   text-indent: 10rem; 50px: it deals with the first line
+   text-transform: uppercase; lowercase; e.t.c
+   text-decoration: line-through; overline;
+   letter-spacing: 5px;
+   line-height: 2rem
+   word-spacing: 2rem;
+   */
+
+  /* css rule */
+/* selectors e.g h1,h2,h3 e.t.c*/
+/* declaration block {} */
+/* declaration are the lines of code*/
+/* prpoperty: color, font-seize e.t.c */
+/* value: value of property e.g value of colors are red, blue, green e.t.c. same as font-size */
+
+/* navy and orange mad colour */
+/* . for class is powerful than P{}paragraph */
+
+/* HEX Values #RRGGBB
+123456789 A(10) B(11) C(12) D(13) E(14) F(15)
+           10    11    12    13     14    15
+           #FF0000 - RED
+           #00FF00 - GREEN
+           #fff - white
+           #000 - black
+*/

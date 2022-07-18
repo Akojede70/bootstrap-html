@@ -1,0 +1,211 @@
+ .root {background: red; 
+}
+p::first-line {
+    font-weight: bold; 
+}
+ p::first-letter {
+    font-size: 3rem;
+}  
+/* p:hover
+.header:hover */
+a:link {
+    color:brown; /*the moment you click on google link it will be brown */
+}
+
+a:visited {
+    color: purple; /* the moment we are going to click on it everyyhing will be purple bacause all of them have #*/
+}
+ a:hover{ 
+    color: blue;
+} 
+a:active{
+    color:green;
+}
+
+  /* div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;  
+}  */
+
+div:hover {
+ background: coral; 
+}
+.one { background: red;
+
+}
+
+.three {
+    background: blue;
+    transition-property: background
+    border-radius 5s 1s;  
+    transition: background 3s 2s,
+    transition-duration:4s, 2s;
+    transition-delay: 2s;
+    transition: all 4s 5s;
+}
+.three:hover{
+    border-radius: 50%;
+}
+
+ div {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: yellowgreen;
+    margin: 15px;
+    transition: all 1s; 
+}
+
+ div:hover {
+    transform: translateX(100px);
+} 
+.ease {
+    transition: all 2s ease;
+    transition-timing-function: ease;
+}
+.linear {
+    transition-timing-function: linear;
+}
+.ease-in {
+    transition-timing-function: ease-in;
+}
+.ease-out {
+    transition-timing-function: ease-out;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+} 
+
+/* ease = default
+   ease = slow start, fast, slow end
+   linear= same speed start to end
+   ease-in = slow start
+   ease-out = slow end
+   ease-in-out = slow start, fast, slow end
+
+ */
+div {
+    width: 200px;
+    height: 100px;
+    color: white;
+    margin: 100px;
+}
+.transition{
+    background: red;
+    transition: all 2s linear;
+}
+.transition:hover{
+    background: yellow;
+    transform: translateX(100px);
+}
+ .animation{
+    background: brown;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(100px);
+        background: red;
+    }
+    75%{
+        transform: translateX(-200px);
+        background: yellow;
+    }
+    100%{
+        transform: translateX(20px);
+        background: green;
+    }
+} */
+
+.animation {
+    background: purple;
+    animation:move 5s 2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0%{
+        opacity:0;
+    }
+    25%{
+        transform:translateX(200px);
+        opacity: 0.25;
+    }
+    50%{
+        transform:translateX(-100px);
+        opacity: 1;
+    }
+    100% {
+        transform:translateX(200px);
+        opacity: 0.5;
+    }
+}
+
+ /* calling a function */
+
+:root{
+    --primaryColor: #1313fa;
+    --secondaryColor: #f15029;
+    --mainTransition: all 0.4s linear;
+}
+.heading{
+    color: var(--primaryColor);
+}
+.second-heading{
+    color: var(--primaryColor);
+    transition: var(--mainTransition);
+}
+.second-heading:hover{
+    color: var(--secondaryColor);
+}
+:root{} === global
+element === local
+
+
+text-shadow
+box-shadow
+h1 {
+    text-shadow: 1px 1px 10px red;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background: blue;
+    margin: 20px;
+    box-shadow: 3px 5px 5px green;
+}
+
+
+
+
+
+
+
+
+
+
+/* transform: rotate(340deg); it rotate in dergree 
+/* transform: rotatez(340deg); it rotate in dergree 
+/* transform: rotatex(90deg); it rotate in dergree 
+/* transform: rotateY(90deg); it reduce seize.  you can also try the negative value out 
+
+/* transform: skewX(40deg);  to move sligh tly
+/* transform: skewY(-20deg); */
+/* transform: skew(40deg, -20deg); */
+
+
+/* transform: scaleY(2); to reduce the size */
+/* transform: scaleY(1.5,1.5); */
+
+/* transform: translateX(50%); using percent */
+/* transform: translateY(-30px,(to move upward)30px(to move downward)); */
+/* transform: translate(200px, 300px); */

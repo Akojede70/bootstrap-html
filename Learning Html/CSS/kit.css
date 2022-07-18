@@ -1,0 +1,166 @@
+
+ div{ height: 600px;
+     color: blue;}
+
+     .big Img {
+         background: url("/IMG-20210908-WA0023.jpg");
+     }
+     .small Img {
+         border: 2px solid red;
+         background: url("./Screenshot_20210909-012415.png");
+     }
+     .folder Img {background: url("./FB_IMG_16503391209126705.jpg");  
+     } 
+     
+     /* /* background-repeat has so many options
+     which are no-repeat, repeat-x, repeat-y, space, round. 
+     background-size: cover; to cover everywhere*/
+
+     /* min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-attachment: fixed, pictures will stay fixed but text will be moving 
+      */
+
+     /* Background position; center, left, right
+    we can also use percent like this background-position: 0%x(axis) 0%y(axis) */
+
+   /* div {
+       width: 150px;
+       height: 150px;
+       margin: 5px;
+   }  */
+
+ /* .one {background: linear-gradient(red, green);}
+.two { background: linear-gradient(to top, red,green, blue, yellow);}
+.three { background: linear-gradient(315deg, red, green);}
+.four {background: linear-gradient(to top right, red, green);}
+.five {background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.9));}
+.six {background: linear-gradient (to left, rgba(0,0,0,0.3) rgba(0,0,0,0.9));}
+  */
+
+/* overflow: hidden;
+float: right
+clear: both; when you use float properties, you use clear with it because of errors.
+margin-left: */
+/* position: relative; top: 50px; left: 20rem; right: 50%
+   position: absolute; top: 50px; left: 20rem; right: 50% extreme end
+   position: static; no movement.
+*/
+
+ /* body {
+    background: yellow
+}
+.banner {
+    background: blue;
+}
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize
+}  */
+
+
+ /* @media screen and (min-width: 576px){
+    body{
+        background: red
+    }
+    .banner {
+        background: yellow;
+        border-radius: 20px
+    }
+    h1 {
+        color: black; 
+        font-size: 60px;
+    }
+} 
+
+  @media screen and (max-width: 768px){
+    body{
+        background: green
+    }
+    .banner {
+        background: blue;
+        border-radius: 20px
+    }
+    h1 {
+        color: black; 
+        font-size: 60px;
+        text-align: right;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    }  */
+
+    /* z-index: it ranges from 0-0999 used with pictures*/
+     p::before {
+        content: "hello";
+        display: block;
+        background: black;
+        font-weight: bold;
+        color: red
+    } 
+
+ p::after {content: "Peter Bass";
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    background: black;
+    font-weight: bold;
+    color: red
+} 
+ div {
+    width: 50vw;
+    margin: 100px auto;  /* shift the picture to center*/
+    border: 2px solid red;
+    position: relative; 
+}
+h1{
+    justify-content: center;
+    text-align: center;
+}
+
+ img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+} 
+ div::before {
+    content: "";
+    border: 2px solid grey;
+    width: 100%;
+    height: 100%;
+     position: absolute; 
+     box-sizing: border-box; 
+     top: -40px; 
+     left: -40px;
+     z-index: -2;
+     transition: all 0.5s linear; 
+}
+ div::after {
+    content: "";
+     background: greenyellow; 
+    border: 2px solid grey;
+    width: 100%;
+    height: 50%;
+     position: absolute; 
+     box-sizing: border-box; 
+     top: -30px; 
+     left: -30px;
+     z-index: -1;
+     transition: all 0.5s linear; 
+}
+
+div:hover::after,
+div:hover::before{
+    top: 0;
+    left: 0; 
+}
+
+/* without content the diplay: block will not function */
+/* div h1{} select all */
+/* div > h1 {color: red;} more specific select first
+/* .header h1 {color: green;} select all h1*/
+/* .header > h1 {color: purple;} select only the first h1*/
+

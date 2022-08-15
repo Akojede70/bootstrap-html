@@ -1,3 +1,3 @@
 ## bootstrap-html
 
-My Learning Process
+some basics concept I documented in Bootstrap, HTML.
